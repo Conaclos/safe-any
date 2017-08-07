@@ -1,0 +1,7 @@
+*.log
+test
+tsconfig.json
+.editorconfig
+.gitattributes
+tslint.json
+yarn.lock

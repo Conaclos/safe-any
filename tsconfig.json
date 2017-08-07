@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "allowJs": false,
+    "declaration": true,
+    "lib": ["es6"],
+    "module": "commonjs",
+    "noEmitHelpers": true,
+    "removeComments": false,
+    "skipDefaultLibCheck": true,
+    "sourceMap": true,
+    "target": "es6",
+
+    "outDir": "./dist",
+
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny" : true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "strict": true,
+
+    "pretty": true
+  }
+}
+
