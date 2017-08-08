@@ -3,11 +3,15 @@
   "version": "1.0.0",
   "description": "Type-safe alternative to TypeScript any.",
   "author": "Victorien Elvinger (victorien.elvinger.fr)",
-  "contributors": ["Matthieu Nicolas"],
+  "contributors": [
+    "Matthieu Nicolas"
+  ],
   "main": "index.d.ts",
   "scripts": {
     "check": "tsc --noEmit",
-    "lint": "tslint --project tsconfig.json",
+    "build": "tsc --noEmit",
+    "lint": "tslint -p tsconfig.json && tslint -p code-samples/tsconfig.json",
+    "test": "tsc -p code-samples/ --noEmit",
     "release": "standard-version --sign"
   },
   "repository": {
@@ -24,7 +28,7 @@
     "url": "https://github.com/Conaclos/safe-any/issues"
   },
   "homepage": "https://github.com/Conaclos/safe-any#readme",
-  "typings": "index.d.ts",
+  "types": "index.d.ts",
   "devDependencies": {
     "standard-version": "^4.2.0",
     "tslint": "^5.5.0",

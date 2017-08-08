@@ -1,7 +1,19 @@
+
+# Logs
+logs
 *.log
-test
-tsconfig.json
+npm-debug.log*
+
+# Dev configs
 .editorconfig
-.gitattributes
+.travis.yml
+tsconfig.json
 tslint.json
+
+# No dependencies
 yarn.lock
+package-lock.json
+
+# Other
+code-samples
+

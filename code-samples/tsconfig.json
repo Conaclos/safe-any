@@ -16,7 +16,8 @@
     "pretty": true
   },
   "include": [
-    "index.d.ts"
+    "./*.ts",
+    "../index.d.ts"
   ]
 }
 

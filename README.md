@@ -1,6 +1,8 @@
 
 # Safe any
 
+[![travis][travis-image]][travis-url]
+
 [![Standard Version][sv-image]][sv-url]
 [![NPM version][npm-image]][npm-url]
 
@@ -87,6 +89,8 @@ if (typeof x === "object" && x !== null &&
 }
 ```
 
+More examples are availables in `code-samples`.
+
 
 ## FAQ
 
@@ -113,6 +117,9 @@ If `T1` and `T2` have at least one common property name, then `SafeAny<T1>` and
  make a type assertion to do this assigment.
 
 
+[travis-image]:
+https://img.shields.io/travis/Conaclos/safe-any/master.svg
+[travis-url]: https://travis-ci.org/Conaclos/safe-any
 [sv-image]:
 https://img.shields.io/badge/release-standard%20version-brightgreen.svg?style=flat-square
 [sv-url]:
