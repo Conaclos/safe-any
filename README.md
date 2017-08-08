@@ -4,10 +4,10 @@
 [![Standard Version][sv-image]][sv-url]
 [![NPM version][npm-image]][npm-url]
 
-`SafeAny` provides a type-safe alternative to Typescript `any`. It enforces
+`SafeAny` provides a type-safe alternative to TypeScript `any`. It enforces
  a complete type test.
 
-We first motivate the need of an alternative to Typescript `any` type. Then we
+We first motivate the need of an alternative to TypeScript `any` type. Then we
  introduce how to use `SafeAny`.
 
 
@@ -37,13 +37,13 @@ The following code is invalid:
 const x: Object | null | undefined = ...
 if (x !== null && typeof x === "object") {
     if (typeof x.fullname === "string") {
-        // error: Property 'fullname' does not exist
+        //> error: Property 'fullname' does not exist
     }
 }
 
 ```
 
-A type-safe alternative could be:
+A compiler-compliant alternative could be:
 
 ```typescript
 const x: Object | null | undefined = ...
@@ -65,7 +65,7 @@ This is a simple test. Imagine a test over a complex object structure with
 
 ## Type-safe test
 
-`SafeAny<T>` provides a way to defensively test if an object is valid, without
+`SafeAny` provides a way to defensively test if an object is valid, without
  any type-assertion or compiler tricks.
 
 If you wish to test if an object `x` is structurally equivalent to an object of
@@ -73,7 +73,7 @@ If you wish to test if an object `x` is structurally equivalent to an object of
  to `x`.
 
 As an example assume that we receive a well-formed json string. The sender
- claims that the json string represents `Person`. The following sample enables
+ claims that the json string represents a `Person`. The following sample enables
  to test its claim:
 
  ```typescript
