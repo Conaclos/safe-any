@@ -1,6 +1,6 @@
 {
   "name": "safe-any",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Type-safe alternative to TypeScript any.",
   "author": "Victorien Elvinger (victorien.elvinger.fr)",
   "contributors": [
