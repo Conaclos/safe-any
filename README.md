@@ -108,8 +108,9 @@ npm install --save-dev safe-any
 
 ### What about type-union?
 
-`SafeAny<T1 | T2>` is equivalent to `SafeAny<T1 & T2>`. They enable to test the
- type of every property of `T1` and `T2`.
+If `T1` and `T2` have at least one common property name, then `SafeAny<T1>` and
+ `SafeAny<T2>` are assignable to `SafeAny<T1 | T2>`. Otherwise, you have to
+ make a type assertion to do this assigment.
 
 
 [sv-image]:
