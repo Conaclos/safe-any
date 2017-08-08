@@ -7,7 +7,7 @@ import { Group } from "./group"
 
 export class Project {
 
-    team: Person | Group
+    readonly team: Person | Group
 
     constructor (team: Person | Group) {
         this.team = team
