@@ -23,7 +23,12 @@
   "keywords": [
     "typescript",
     "safe-any",
-    "structural-test"
+    "any",
+    "type-safe",
+    "type-safety",
+    "type-test",
+    "defensive-programming",
+    "untrusted-values"
   ],
   "license": "MIT",
   "bugs": {
