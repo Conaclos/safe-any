@@ -112,9 +112,9 @@ npm install --save-dev safe-any
 
 ### What about type-union?
 
-If `T1` and `T2` have at least one common property name, then `SafeAny<T1>` and
- `SafeAny<T2>` are assignable to `SafeAny<T1 | T2>`. Otherwise, you have to
- make a type assertion to do this assigment.
+If `T1` and `T2` have at least one common property name, then a source of type
+ `SafeAny<T1 | T2>` is assignable to a target of type `SafeAny<T1>` or
+ `SafeAny<T2>`. Otherwise, you have to make a type assertion.
 
 
 [travis-image]:
