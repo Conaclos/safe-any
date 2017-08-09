@@ -10,8 +10,8 @@
   "scripts": {
     "check": "tsc --noEmit",
     "build": "tsc --noEmit",
-    "lint": "tslint -p tsconfig.json && tslint -p code-samples/tsconfig.json",
-    "test": "tsc -p code-samples/ --noEmit && npm run lint",
+    "lint": "tslint -p tsconfig.json && tslint -p examples/tsconfig.json",
+    "test": "tsc -p examples/ --noEmit && npm run lint",
     "release": "standard-version --sign --",
     "commitmsg": "validate-commit-msg",
     "prepush": "npm test"

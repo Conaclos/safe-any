@@ -89,7 +89,7 @@ if (typeof x === "object" && x !== null &&
 }
 ```
 
-More examples are availables in `code-samples`.
+More examples are availables in [here](examples/).
 
 
 ## FAQ
