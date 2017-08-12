@@ -30,7 +30,7 @@
     "defensive-programming",
     "untrusted-values"
   ],
-  "license": "MIT",
+  "license": "zlib",
   "bugs": {
     "url": "https://github.com/Conaclos/safe-any/issues"
   },
