@@ -1,3 +1,6 @@
+// Copyright (c) 2017 Victorien Elvinger, Matthieu Nicolas
+//
+// Licensed under the zlib license (https://opensource.org/licenses/zlib).
 
 import { SafeAny } from "../"
 
