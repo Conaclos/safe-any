@@ -2,14 +2,12 @@
 # Safe any
 
 [![travis][travis-image]][travis-url]
-
-[![Standard Version][sv-image]][sv-url]
 [![NPM version][npm-image]][npm-url]
 
 `SafeAny` provides a type-safe alternative to TypeScript `any`. It enforces
  a complete type test.
 
-We first motivate the need of an alternative to TypeScript `any` type. Then we
+We first explain why we need an alternative to TypeScript `any` type. Then we
  introduce how to use `SafeAny`.
 
 
@@ -19,9 +17,9 @@ Type `any` was introduced in TypeScript for gradual typing. In particular to
  progressively type an existing JavaScript project.
 
 In a pure TypeScript project, `any` is only used to bypass the compiler.
-  By using `any` you tell to the compiler to keep away and to blindly trust you.
+  By using `any` you tell the compiler to keep away and to blindly trust you.
 
-For instance the following code compiles with strict null checks:
+For instance, the following code compiles with strict null checks:
 
 ```typescript
 const x: any = null
@@ -67,7 +65,7 @@ This is a simple test. Imagine a test over a complex object structure with
 
 ## Type-safe test
 
-`SafeAny` provides a way to defensively test if an object is valid, without
+`SafeAny` provides a way to defensively test whether an object is valid, without
  any type-assertion or compiler tricks.
 
 If you wish to test if an object `x` is structurally equivalent to an object of
@@ -89,7 +87,7 @@ if (typeof x === "object" && x !== null &&
 }
 ```
 
-More examples are available in [here](examples/).
+More examples are available [here](examples/).
 
 
 ## FAQ
@@ -114,7 +112,7 @@ npm install --save-dev safe-any
 
 If `T1` and `T2` have at least one common property name, then a source of type
  `SafeAny<T1 | T2>` is assignable to a target of type `SafeAny<T1>` or
- `SafeAny<T2>`. Otherwise, you have to make a type assertion.
+ `SafeAny<T2>`.
 
 
 [travis-image]:
